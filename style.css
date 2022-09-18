@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    
+}
+.left img{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.right{
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 450px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 28px;
+}
+.fw h1{
+    font-family: Montserrat;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+
+}
+.sw h2{
+    font-weight: 700;
+    font-size: 36px;
+    font-family: cooperblack;
+    padding-top: 20px;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", sans;
+    font-weight: 700;
+    
+}
+.tw h3{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    padding-top: 20px;
+    font-size: 14px;
+}
+.fw{
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: "Fraunces", sans;
+    font-weight: 700;
+}
+.fw del{
+    font-size: 12px;
+    margin-left: 20px;
+    color: hsl(228, 12%, 48%);
+    margin-top: 10px;
+}
+.button{
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+}
+.button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: hsl(30, 38%, 92%);
+    font-family: "Montserrat";
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:375px) {
+    .container{
+        margin-top: 40px;
+        display: block;
+        padding-top: 50px;
+    }
+    .left img{
+        width: 300px;
+        height: 250px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        background-size: contain;
+    }
+    .right{
+        margin-bottom: 10px;
+        height: 430px;
+        padding: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    .attribution{
+        font-size: 10px;
+    }
+}
